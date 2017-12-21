@@ -1,0 +1,10 @@
+﻿@model IDictionary<string,string>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+	@foreach (var item in Model)
+	{
+		<span>@(item.Key+":"+item.Value+",")</span>
+	}
